@@ -15,7 +15,7 @@ scenes.main = function() {
 	this.updata = function(dt) {
 		let touchC = main.camera.buf(touch);
 	//=======prePROCES=======//--vs--//=======EVENTS=======//
-		cameraMoveObject.updata(main.camera);
+		cameraMoveObject.updata(touch, main.camera);
 	//==================================================//
 	
 	

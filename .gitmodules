@@ -1,4 +1,4 @@
 [submodule "assets"]
 	path = assets
 	url = https://github.com/admenmod/assets.git
-	branch = dev
+	branch = next
