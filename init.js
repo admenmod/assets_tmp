@@ -2,7 +2,7 @@
 let cvs = document.querySelector('#canvas');
 let {main, back} = cvs.canvasEmitCamera;
 
-let touch = new TouchControl(cvs, e => e.path[0].className !== 'slot');
+let touch = new TouchesControl(cvs, e => e.path[0].className !== 'slot');
 
 let db = {}; // resures: [images, audios]
 let em = new EventEmiter();
