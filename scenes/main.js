@@ -7,15 +7,15 @@ scenes.main = function() {
 	
 	
 //===============init===============//
-	this.init = function() {
+	this.init = data => {
 		// ...;
 	};
 	
 //===============updata===============//
-	this.updata = function(dt) {
+	this.updata = dt => {
 		let touchC = main.camera.buf(touch);
 	//=======prePROCES=======//--vs--//=======EVENTS=======//
-		cameraMoveObject.updata(main.camera);
+		cameraMoveObject.updata(touch, main.camera);
 	//==================================================//
 	
 	
@@ -30,7 +30,7 @@ scenes.main = function() {
 	};	//==============================//
 	
 //===============exit===============//
-	this.exit = function() {
+	this.exit = () => {
 		// ...;
 	};
 };
